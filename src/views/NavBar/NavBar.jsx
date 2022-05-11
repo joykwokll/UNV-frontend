@@ -23,10 +23,8 @@ function HeaderBar(props) {
               <Nav.Link as={Link} to="/profile">Profile</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-              </Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
+            <Nav.Link as={Link} to="/join">Join Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
