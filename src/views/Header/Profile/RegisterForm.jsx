@@ -1,27 +1,46 @@
 import React from "react";
-
+import { Form , Button} from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function RegisterForm(props) {
-    
-    return (
-      <div>
-          
-          
+  return (
+    <div>
       <p>Register Form</p>
-      </div>
-    );
-  }
-  
-  export default RegisterForm;
-  
+      <Form>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Text className="text-muted">
+            We'll never share your email with anyone else.
+          </Form.Text>
+        </Form.Group>
 
-// // import { useState } from "react";
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>Password</Form.Label>
+          <Form.Control type="password" placeholder="Password" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form.Check type="checkbox" label="Check me out" />
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
+    </div>
+  );
+}
+
+export default RegisterForm;
+
+{
+  /* // // import { useState } from "react";
 // // import urlcat from "urlcat";
 // // import { BACKEND } from "../../../utils/utils";
 // // import {useNavigate} from 'react-router-dom'
 
 
-// function Register() {
+// function Register() { */
+}
 //   const [error, setError] = useState("");
 //   const [username, setUsername] = useState("");
 //   const [email, setEmail] = useState("");

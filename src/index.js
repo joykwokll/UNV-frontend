@@ -9,6 +9,7 @@ import Services from './views/Header/Services/Services'
 import Tips from './views/Header/Tips/Tips'
 import Products from './views/Header/Products/Products'
 import Profile from './views/Header/Profile/Profile'
+import RegisterForm from './views/Header/Profile/RegisterForm';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -23,6 +24,8 @@ ReactDOM.render(
        <Route path="Tips" element = {<Tips />} />
        <Route path="Products" element = {<Products />} />
        <Route path="Profile" element = {<Profile />} />
+       <Route path="RegisterForm" element = {<RegisterForm />} />
+
       </Route>
     </Routes>
   </BrowserRouter>,
