@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import About from './views/Header/About/About';
-import Services from './views/Header/Services/Services'
-import Tips from './views/Header/Tips/Tips'
-import Products from './views/Header/Products/Products'
-import Profile from './views/Header/Profile/Profile'
-import RegisterForm from './views/Header/Profile/RegisterForm';
+import About from './views/Routes/About/About';
+import Services from './views/Routes/Services/Services'
+import Tips from './views/Routes/Tips/Tips'
+import Products from './views/Routes/Products/Products'
+import Profile from './views/Routes/Profile/Profile'
+import RegisterForm from './views/Routes/Profile/RegisterForm';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -21,7 +21,7 @@ ReactDOM.render(
         <Route path="*" element = {<p>There's nothing here!</p>} /> */}
        <Route path="About" element = {<About />} /> 
        <Route path="Services" element = {<Services />} />
-       <Route path="Tips" element = {<Tips />} />
+       <Route path="BeautyTips" element = {<Tips />} />
        <Route path="Products" element = {<Products />} />
        <Route path="Profile" element = {<Profile />} />
        <Route path="RegisterForm" element = {<RegisterForm />} />
