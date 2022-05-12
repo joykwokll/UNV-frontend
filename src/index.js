@@ -12,6 +12,10 @@ import Profile from './views/Routes/Profile/Profile'
 import RegisterForm from './views/Routes/Profile/RegisterForm';
 import LoginForm from './views/Routes/Profile/LoginForm';
 import Home from './views/Routes/Home/Home'
+import AntiAging from './views/Routes/Services/AntiAging'
+import Pigmentation from './views/Routes/Services/Pigmentation'
+import SensitiveSkin from './views/Routes/Services/SensitiveSkin'
+import Pimple from './views/Routes/Services/Pimple'
 
 ReactDOM.render(
   <BrowserRouter>
@@ -25,6 +29,10 @@ ReactDOM.render(
        <Route path="Home" element = {<Home />} /> 
        <Route path="About" element = {<About />} /> 
        <Route path="Services" element = {<Services />} />
+       <Route path="AntiAging" element = {<AntiAging />} />
+       <Route path="Pigmentation" element = {<Pigmentation />} />
+       <Route path="SensitiveSkin" element = {<SensitiveSkin />} />
+       <Route path="Pimple" element = {<Pimple />} />
        <Route path="BeautyTips" element = {<Tips />} />
        <Route path="Products" element = {<Products />} />
        <Route path="Profile" element = {<Profile />} />

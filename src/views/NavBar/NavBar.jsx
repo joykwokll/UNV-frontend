@@ -13,9 +13,9 @@ function HeaderBar(props) {
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/about">About</Nav.Link>
               <NavDropdown title="Services" id="collasible-nav-dropdown">
-                <NavDropdown.Item as={Link} to ="/antianging">Anti Aging</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to ="/antiaging">Anti Aging</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to ="/pigmentation">Pigmentation</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to ="/sensetiveskin">Sensetive Skin</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to ="/sensitiveskin">Sensitive Skin</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to ="/pimple">Pimple</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={Link} to="/beautytips">Beauty Tips</Nav.Link>
