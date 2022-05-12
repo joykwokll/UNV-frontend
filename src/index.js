@@ -10,21 +10,26 @@ import Tips from './views/Routes/Tips/Tips'
 import Products from './views/Routes/Products/Products'
 import Profile from './views/Routes/Profile/Profile'
 import RegisterForm from './views/Routes/Profile/RegisterForm';
+import LoginForm from './views/Routes/Profile/LoginForm';
+import Home from './views/Routes/Home/Home'
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element = {<App />} >
+      {/* <Route path="Home" element = {<Home />} > */}
         {/* <Route index element = {<Homepage />} />
         <Route path="Stocks" element = {<Stocks />} />
         <Route path="Stockdata/:StockSymbols" element = {<Stock />} />
         <Route path="*" element = {<p>There's nothing here!</p>} /> */}
+       <Route path="Home" element = {<Home />} /> 
        <Route path="About" element = {<About />} /> 
        <Route path="Services" element = {<Services />} />
        <Route path="BeautyTips" element = {<Tips />} />
        <Route path="Products" element = {<Products />} />
        <Route path="Profile" element = {<Profile />} />
        <Route path="RegisterForm" element = {<RegisterForm />} />
+       <Route path="LoginForm" element = {<LoginForm />} />
 
       </Route>
     </Routes>
